@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ReadController">
+   <children>
+      <Label alignment="CENTER" layoutX="288.0" layoutY="31.0" prefHeight="92.0" prefWidth="304.0" text="Read" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUpdate" alignment="CENTER" layoutX="732.0" layoutY="530.0" mnemonicParsing="false" onAction="#toUpdate" prefHeight="33.0" prefWidth="118.0" text="Update" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnList" alignment="CENTER" layoutX="30.0" layoutY="530.0" mnemonicParsing="false" onAction="#toList" prefHeight="33.0" prefWidth="118.0" text="List" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="123.0" prefHeight="69.0" prefWidth="198.0" text="TITLE" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="199.0" prefHeight="69.0" prefWidth="198.0" text="WRITER" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" layoutX="203.0" layoutY="131.0" prefHeight="53.0" prefWidth="639.0" promptText="Please Enter Title">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfWriter" layoutX="203.0" layoutY="207.0" prefHeight="53.0" prefWidth="639.0" promptText="Please Enter Writer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="taContent" layoutX="40.0" layoutY="275.0" prefHeight="231.0" prefWidth="802.0" promptText="Please Enter Writer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
