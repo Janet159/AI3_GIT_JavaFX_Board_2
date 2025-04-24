@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aloha.Controller.ReadController">
    <children>
-      <Label alignment="CENTER" layoutX="288.0" layoutY="31.0" prefHeight="92.0" prefWidth="304.0" text="Read" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="288.0" layoutY="31.0" prefHeight="92.0" prefWidth="304.0" text="조회" textAlignment="CENTER">
          <font>
             <Font size="30.0" />
          </font>
@@ -24,12 +24,12 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="123.0" prefHeight="69.0" prefWidth="198.0" text="TITLE" textAlignment="CENTER">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="123.0" prefHeight="69.0" prefWidth="198.0" text="제목" textAlignment="CENTER">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="199.0" prefHeight="69.0" prefWidth="198.0" text="WRITER" textAlignment="CENTER">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="199.0" prefHeight="69.0" prefWidth="198.0" text="작성자" textAlignment="CENTER">
          <font>
             <Font size="24.0" />
          </font>

@@ -1,9 +1,11 @@
 package com.aloha;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,7 +21,13 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("Main"));
         stage.setScene(scene);
-        stage.show();
+
+        Image icon = new Image(getClass().getResource("/com/aloha/icon.png").toString());
+		stage.getIcons().add(icon);
+		stage.setTitle("미니 2조 게시판");
+		stage.setResizable(false);
+		stage.show();
+
     }
 
     public static void setRoot(String fxml) throws IOException {
@@ -40,6 +48,11 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch();
+    }
+
+    public static void exit(ActionEvent event) throws Exception{
+        Stage stage = (Stage) scene.getWindow();
+		stage.close();
     }
 
 }
