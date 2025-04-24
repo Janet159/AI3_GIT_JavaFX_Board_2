@@ -37,18 +37,18 @@ public class InsertController {
     void insert(ActionEvent event) throws IOException {
         // 게시글 등록
         Board board = Board.builder().title(title.getText())
-                                     .writer(writer.getText())
-                                     .content(content.getText())
-                                     .build();
+                .writer(writer.getText())
+                .content(content.getText())
+                .build();
 
         int result = boardDAO.insert(board);
-        if( result > 0 ) {
+        if (result > 0) {
             System.out.println("게시글 등록 성공!");
         } else {
             System.out.println("게시글 등록 실패!");
         }
         // 게시글 목록으로 이동
-        Main.setRoot("UI/Update");
+        Main.setRoot("UI/List");
     }
 
 }

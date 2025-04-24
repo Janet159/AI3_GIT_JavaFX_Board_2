@@ -54,8 +54,8 @@ public class BoardDAO extends JDBConnection {
 				board.setTitle(rs.getString("title"));
 				board.setWriter(rs.getString("writer"));
 				board.setContent(rs.getString("content"));
-				board.setCreatedAt(rs.getTimestamp("reg_date"));
-				board.setUpdatedAt(rs.getTimestamp("upd_date"));
+				board.setRegDate(rs.getTimestamp("reg_date"));
+				board.setUpdDate(rs.getTimestamp("upd_date"));
 
 				// 게시글 목록 추가
 				boardList.add(board);
