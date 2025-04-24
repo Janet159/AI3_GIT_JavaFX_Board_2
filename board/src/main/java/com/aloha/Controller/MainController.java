@@ -7,8 +7,6 @@ import javafx.scene.control.Button;
 
 public class MainController {
 
-    @FXML
-    private Button btnExit;
 
     @FXML
     private Button btnList;
