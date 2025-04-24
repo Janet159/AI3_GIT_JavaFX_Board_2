@@ -93,9 +93,4 @@ public class ListController {
 		Main.setRoot("UI/Insert");
 	}
 
-	@FXML
-	void toMain(ActionEvent event) throws Exception {
-		Main.setRoot("Main");
-	}
-
 }
