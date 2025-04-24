@@ -27,12 +27,12 @@ public class Main extends Application {
         scene.setRoot(loadFXML(fxml));
     }
 
-    	/**
-	 * Parent root 를 가져와서 화면 이동
-	 */
-	private static void setRoot(Parent root) throws IOException {
-		scene.setRoot(root);
-	}
+    /**
+     * Parent root 를 가져와서 화면 이동
+     */
+    public static void setRoot(Parent root) throws IOException {
+        scene.setRoot(root);
+    }
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));
