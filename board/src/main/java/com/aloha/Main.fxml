@@ -20,12 +20,12 @@
       </Button>
       <ImageView fitHeight="263.0" fitWidth="263.0" layoutX="301.0" layoutY="133.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../Users/tj-bu-706-19/Downloads/2025년%204월%2024일%20오후%2005_14_18.png" />
+            <Image url="@icon2.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="175.0" fitWidth="187.0" layoutX="362.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="175.0" fitWidth="187.0" layoutX="345.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../Users/tj-bu-706-19/Downloads/ChatGPT%20Image%202025년%204월%2024일%20오후%2005_19_34.png" />
+            <Image url="@icon3.png" />
          </image>
       </ImageView>
    </children>

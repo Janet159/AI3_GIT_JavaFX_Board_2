@@ -22,7 +22,7 @@ public class Main extends Application {
         scene = new Scene(loadFXML("Main"));
         stage.setScene(scene);
 
-        Image icon = new Image(getClass().getResource("/com/aloha/icon.png").toString());
+        Image icon = new Image(getClass().getResource("icon.png").toString());
 		stage.getIcons().add(icon);
 		stage.setTitle("미니 2조 게시판");
 		stage.setResizable(false);
