@@ -12,9 +12,12 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 
@@ -93,4 +96,30 @@ public class ListController {
 		Main.setRoot("UI/Insert");
 	}
 
-}
+	@FXML
+	void toHome(ActionEvent event) throws Exception{
+		Main.setRoot("Main");
+	}
+
+	@FXML
+	void ListDelete(ActionEvent event) throws Exception{
+			Board selected = boardTableView.getSelectionModel().getSelectedItem();
+			int boardNo = selected.getNo();
+			Alert alert = new Alert(AlertType.CONFIRMATION);
+			alert.setTitle("데이터 삭제");
+			alert.setHeaderText("현재 게시글을 삭제하시겠습니까? no: " + boardNo);
+			alert.setContentText("삭제 후에는 취소 할 수 없습니다.");
+	
+			int result = 0;
+			if (alert.showAndWait().get() == ButtonType.OK) {
+				result = boardService.delete(boardNo);
+			}
+			if (result > 0) {
+				System.err.println("삭제 완료");
+				// 리스트 화면으로
+				Main.setRoot("UI/List");
+			}
+		}
+	}
+
+

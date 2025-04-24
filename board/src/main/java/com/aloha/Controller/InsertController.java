@@ -49,6 +49,12 @@ public class InsertController {
         }
         // 게시글 목록으로 이동
         Main.setRoot("UI/List");
+
     }
+    @FXML
+    void toHome(ActionEvent event) throws Exception{
+        Main.setRoot("UI/List");
+    }
+
 
 }
