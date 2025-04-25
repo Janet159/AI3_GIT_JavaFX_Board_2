@@ -98,7 +98,7 @@ public class ListController {
 
 	@FXML
 	void toHome(ActionEvent event) throws Exception{
-		Main.setRoot("Main");
+		Main.setRoot("UI/Main");
 	}
 
 	@FXML
