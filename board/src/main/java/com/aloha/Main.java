@@ -19,10 +19,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Main"));
+        scene = new Scene(loadFXML("UI/Main"));
         stage.setScene(scene);
 
-        Image icon = new Image(getClass().getResource("/com/aloha/icon.png").toString());
+        Image icon = new Image(getClass().getResource("icon.png").toString());
 		stage.getIcons().add(icon);
 		stage.setTitle("미니 2조 게시판");
 		stage.setResizable(false);
